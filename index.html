@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ATM</title>
 
+  </head>
+  <body>
+  <script>
+  var sum = +prompt("Enter sum");
+  
+  if (sum > 8880) {
+    alert (" введите сумму 8880 или меньше")
+  }
+  else if (sum<=8880 && sum>0){
+    var k500 = sum/500
+    if (k500>10) {
+      k500=10; sum = sum - (500*k500)
+    }
+    else if (k500<=10 && k500>0){
+      k500 = Math.floor(k500)
+      sum = sum - (500*k500)
+    }
+    else (k500 = 0)
+  
+    var k200 = sum/200
+    if (k200>10) {
+      k200=10; sum = sum - (200*k200)
+    }
+    else if (k200<=10 && k200>0){
+      k200 = Math.floor(k200)
+      sum = sum - (200*k200)
+    }
+    else (k200 = 0)
+
+     var k100 = sum/100
+    if (k100>10) {
+      k100=10; sum = sum - (100*k100)
+    }
+    else if (k100<=10 && k100>0){
+      k100 = Math.floor(k100)
+      sum = sum - (100*k100)
+    }
+    else (k100 = 0)
+
+     var k50 = sum/50
+    if (k50>10) {
+      k50=10; sum = sum - (50*k50)
+    }
+    else if (k50<=10 && k50>0){
+      k50 = Math.floor(k50)
+      sum = sum - (50*k50)
+    }
+    else (k50 = 0)
+
+     var k20 = sum/20
+    if (k20>10) {
+      k20=10; sum = sum - (20*k20)
+    }
+    else if (k20<=10 && k20>0){
+      k20 = Math.floor(k20)
+      sum = sum - (20*k20)
+    }
+    else (k20 = 0)
+
+     var k10 = sum/10
+    if (k100>10) {
+      k100=10; sum = sum - (100*k10)
+    }
+    else if (k10<=10 && k10>0){
+      k10 = Math.floor(k10)
+      sum = sum - (10*k10)
+    }
+    else (k10 = 0)
+
+    var k5 = sum/5
+    if (k5>10) {
+      k5=10; sum = sum - (5*k5)
+    }
+    else if (k5<=10 && k5>0){
+      k5 = Math.floor(k5)
+      sum = sum - (5*k5)
+    }
+    else (k5 = 0)
+
+    var k2 = sum/2
+    if (k2>10) {
+      k2=10; sum = sum - (2*k2)
+    }
+    else if (k2<=10 && k2>0){
+      k2 = Math.floor(k2)
+      sum = sum - (2*k2)
+    }
+    else (k2 = 0)
+
+    var k1 = sum/1
+    if (k1>10) {
+      k1=10; sum = sum - (1*k1)
+    }
+    else if (k1<=10 && k1>0){
+      sum = sum - (1*k1)
+    }
+    else (k1 = 0)
+    var ksum = k500 + k200 + k100 + k50 + k20 + k10 + k5 + k2 + k1
+    alert ( +ksum+" - это всего купюр к выдаче; "+" купюра по 500-"+k500+" купюра по 200-"+k200+" купюра по 100-"+k100+" купюра по 50-"+k50+
+    " купюра по 20-"+k20+" купюра по 10-"+k10+" купюра по 5-"+k5+" купюра по 2-"+k2+" купюра по 1-"+k1)
+
+  }
+  else{
+    alert ("введите сумму числом больше нуля до 8880")
+  }
+  </script>
+  </body>
+</html>
